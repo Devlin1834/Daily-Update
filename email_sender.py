@@ -11,13 +11,13 @@ Created on Fri Feb  2 10:51:15 2018
 
 import base64
 import httplib2
+import os
+import email_writer  # I wrote this one!
 from apiclient import discovery
 from email.mime.text import MIMEText
-import os
 from oauth2client import client
 from oauth2client import tools
 from oauth2client.file import Storage
-import email_writer
 
 try:
     import argparse
